@@ -8,15 +8,23 @@ spring :
 # 각자 PC에 만들어놓은 Database 이름을 사용해야 함
     url: jdbc:mysql://localhost:3306/db_codingpark?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
 # mysql에 생성한 사용자 계정 정보를 써야 합니다.
-    username: root
-    password: 0000
+    username: SUNGGON
+    password: taiger123!
   thymeleaf:
     cache: false
 
   # spring data jpa 설정
   jpa:
-    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    database-platform: org.hibernate.dialect.MySQLDialect
+#    org.hibernate.dialect.MySQL5InnoDBDialect
     open-in-view: false
     show-sql: true
     hibernate:
       ddl-auto: create
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.MySQLDialect
+#  spring:
+#    h2:
+#      console:
+#        enabled: true
